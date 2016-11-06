@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  node-red:
+    image: machine-data/node-red
+    ports:
+      - "1880:1880"
+    #environment:
+    #  NODE_RED_FLOW_FILE: "/data/flow.json"
+    #volumes:
+    #  - ./settings.js:/config/settings.js:ro
+    #  - ./data:/data
+    #  - /tmp:/tmp
