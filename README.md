@@ -91,8 +91,8 @@ To change these paths you need to overwrite the `NPM_CONFIG_TMP` and `NPM_CONFIG
 
 ## Legal
 
-Node-RED is a creation of [IBM Emerging Technology](https://www.ibm.com/blogs/emerging-technology/), authored by [Nick O'Leary](https://twitter.com/knolleary) and [Dave Conway-Jones](https://twitter.com/ceejay).
-Copyright 2013, 2016 IBM Corp. under the [Apache 2.0 license](https://github.com/node-red/node-red/blob/master/LICENSE).
+Node-RED is a project of the JS Foundation and is a creation of [IBM Emerging Technology](https://www.ibm.com/blogs/emerging-technology/), authored by [Nick O'Leary](https://twitter.com/knolleary) and [Dave Conway-Jones](https://twitter.com/ceejay).
+Copyright JS Foundation and other contributors, [http://js.foundation/](http://js.foundation/) under the [Apache 2.0 license](https://github.com/node-red/node-red/blob/master/LICENSE).
 
 docker-node-red is licensed under the [Apache 2.0 license](https://github.com/machine-data/docker-node-red/blob/master/LICENSE), was created by [Jodok Batlogg](https://github.com/jodok).
 Copyright 2016-2017 [Crate.io, Inc.](https://crate.io).
