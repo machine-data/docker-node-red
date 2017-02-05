@@ -1,7 +1,13 @@
+# Supported tags and respective `Dockerfile` links
+
+- `latest`, `1`, `1.6`, `1.6.2` [(Dockerfile)](https://github.com/machine-data/docker-oauth2_proxy/blob/master/Dockerfile)
+
+- `1.5`, `1.5.1` [(Dockerfile)](https://github.com/machine-data/docker-node-red/blob/v1.5.1/Dockerfile)
+
 # Node-RED on Docker
 
 This repository holds a build definition and supporting files for building a Docker image to run [Node-RED](https://nodered.org).
-It is published as automated build `machine-data/node-red` on [Docker Hub](https://registry.hub.docker.com/u/machinedata/node-red/).
+It is published as automated build `machinedata/node-red` on [Docker Hub](https://registry.hub.docker.com/u/machinedata/node-red/).
 
 ## What is Node-RED?
 
@@ -89,7 +95,7 @@ Node-RED is a creation of [IBM Emerging Technology](https://www.ibm.com/blogs/em
 Copyright 2013, 2016 IBM Corp. under the [Apache 2.0 license](https://github.com/node-red/node-red/blob/master/LICENSE).
 
 docker-node-red is licensed under the [Apache 2.0 license](https://github.com/machine-data/docker-node-red/blob/master/LICENSE), was created by [Jodok Batlogg](https://github.com/jodok).
-Copyright 2016 [Crate.io, Inc.](https://crate.io).
+Copyright 2016-2017 [Crate.io, Inc.](https://crate.io).
 
 ## Contributing
 

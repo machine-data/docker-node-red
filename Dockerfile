@@ -19,7 +19,7 @@ RUN set -xe \
     && npm install -g node-gyp@$NODE_GYP_VERSION \
     && rm -rf /tmp/npm-* /root/.npm
 
-ENV NODE_RED_VERSION 0.15.1
+ENV NODE_RED_VERSION 0.16.2
 RUN set -xe \
     && apk add --no-cache --virtual .build-deps \
         curl \
