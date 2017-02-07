@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:3.5
 
 # add user and group first so their IDs don't change
 RUN addgroup node-red && adduser -G node-red -D -H node-red
