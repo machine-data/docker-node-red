@@ -7,8 +7,8 @@ RUN addgroup node-red && adduser -G node-red -D -H node-red
 RUN apk add --no-cache su-exec
 
 # node.js and node-gyp
-ENV NODE_VERSION 4.4.4-r0
-ENV NODE_GYP_VERSION 3.4.0
+ENV NODE_VERSION 6.9.2-r1
+ENV NODE_GYP_VERSION 3.5.0
 RUN set -xe \
     && apk add --no-cache --virtual .nodejs-rundeps \
         nodejs-lts@$NODE_VERSION \
