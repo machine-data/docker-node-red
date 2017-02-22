@@ -2,7 +2,7 @@ version: '2'
 
 services:
   node-red:
-    image: machine-data/node-red
+    image: machinedata/node-red
     ports:
       - "1880:1880"
     #environment:
