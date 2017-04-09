@@ -11,6 +11,7 @@ ENV NODE_VERSION 6.9.2-r1
 ENV NODE_GYP_VERSION 3.5.0
 RUN set -xe \
     && apk add --no-cache --virtual .nodejs-rundeps \
+        curl \
         nodejs-lts@$NODE_VERSION \
     && apk add --no-cache --virtual .node-gyp-deps \
         python \
@@ -50,6 +51,9 @@ ENV NPM_CONFIG_CACHE /tmp/.npm
 
 VOLUME ["/data"]
 EXPOSE 1880
+
+HEALTHCHECK --interval=5s --timeout=3s --retries=3 \
+    CMD curl --silent --fail --head http://localhost:1880/ || exit 1
 
 COPY docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
