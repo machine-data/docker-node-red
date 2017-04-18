@@ -27,7 +27,7 @@ Not quite:
 Simply start Node-RED and access it via `http://{HOSTNAME}:1880`:
 
 ```sh
-$ docker run -d -p 1880:1880 machine-data/node-red
+$ docker run -d -p 1880:1880 machinedata/node-red
 ```
 
 Application data (flows and add-on modules) is being stored in `/data`, therefore it is recommended to bind mount a volume.
@@ -37,7 +37,7 @@ $ mkdir data
 $ docker run -d \
 	--volume $(pwd)/data:/data \
 	--publish 1880:1880 \
-	machine-data/node-red
+	machinedata/node-red
 ```
 
 ## Environment variables
@@ -57,7 +57,7 @@ $ touch /mnt/data/flows/my_flow.json
 $ docker run -d \
              -e NODE_RED_FLOW_FILE=my_flow.json \
              -v /mnt/data/flows:/data \
-             -p 1880:1880 machine-data/node-red
+             -p 1880:1880 machinedata/node-red
 ```
 
 will start Node-RED with the `myflow.json` flow.
@@ -74,7 +74,7 @@ $ curl -O https://raw.githubusercontent.com/node-red/node-red/master/settings.js
 $ sed -i -e "s#//userDir: '.*'#userDir: '/data'#" settings.js
 $ docker run -d \
              -v $(pwd)/settings.js:/config/settings.js:ro \
-             -p 1880:1880 machine-data/node-red
+             -p 1880:1880 machinedata/node-red
 ```
 
 ## Volumes
